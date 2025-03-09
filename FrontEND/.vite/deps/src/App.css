@@ -1,0 +1,66 @@
+:root {
+  --background-color: #ffffff;
+  --btn-color: #13243e;
+  --btn-text-color: #ffffff;
+  --btn-hover-color: #3a4f6b;
+  --project-card-bg: #f9f9f9;
+  --text-color: #222222;
+  --form-text-color: #555555;
+  --footer-text-color: #888888;
+}
+
+[data-theme='dark'] {
+  --background-color: #202020;
+  --btn-color: #bb86fc;
+  --btn-text-color: #ffffff;
+  --btn-hover-color: #9a68df;
+  --project-card-bg: #1e1e1e;
+  --text-color: #e0e0e0;
+  --form-text-color: #cccccc;
+  --footer-text-color: #aaaaaa;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+}
+
+button {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--btn-hover-color);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+

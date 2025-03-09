@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative; 
+}
+.resume{
+    z-index: 1000;
+}
+.button:hover {
+    background-color: var(--btn-text-color);
+    color: var(--btn-color);
+    transform: translateY(-5px);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.socials {
+    display: flex;
+    gap: 5px;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .socials a {
+    display: flex;
+    align-items: center; /* Ensures icons are vertically centered */
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .socials img {
+    width: 40px; /* Ensures all icons are the same size */
+    height: 40px;
+    transition: transform 0.2s ease;
+    pointer-events: auto;
+  }
+  
+  .socials img:hover {
+    transform: scale(1.1);
+  }
+  
+.colorModeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+    
+}
+
+.colorMode { 
+    z-index: 1000; 
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+
+}
+
+.colorMode:hover {
+    transform: scale(1.1);
+}
+

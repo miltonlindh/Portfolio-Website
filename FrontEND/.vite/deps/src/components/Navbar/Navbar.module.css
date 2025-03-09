@@ -1,0 +1,93 @@
+/* Default Navbar */
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.7s ease;
+
+}
+
+.navbar ul {
+  font-size: 25px;
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.navbar ul li {
+  margin: 50px 0;
+  border-bottom: 1px solid var(--btn-color);
+  font-weight: 200 !important; /* Force it */
+
+}
+
+.navbar ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  
+}
+
+/* Navbar when Scrolled */
+.navbarScrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+  border-bottom: 1px solid var(--btn-color);
+  transition: all 0.7s ease; /* ✅ Keeps the smooth transition */
+}
+
+.navbarScrolled ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.navbarScrolled ul li {
+  margin: 0 40px;
+  border-bottom: none;
+}
+
+/* Fix for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--btn-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar ul li {
+    margin: 0 5px;
+    border-bottom: none;
+  }
+}
