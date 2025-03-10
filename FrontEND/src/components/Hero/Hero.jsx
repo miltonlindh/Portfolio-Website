@@ -46,13 +46,13 @@ function Hero() {
         <span>
           {/*länk till mina social medier */}
           <div className={styles.socials}>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://x.com/MiltonLind54559" target="_blank">
             <img src={twitterIcon} alt="Twitter" />
           </a>
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/miltonlindh" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/milton-lindh-32bab5287/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
           </div>
