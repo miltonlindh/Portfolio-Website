@@ -1,4 +1,4 @@
-/* General responsive styles */
+/* General styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +13,7 @@ html, body {
     flex-direction: column;
 }
 
-/* Container */
+/* Container styles */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -26,7 +26,7 @@ html, body {
     justify-content: center;
 }
 
-/* Flex Container */
+/* Flex container styles */
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@ html, body {
     justify-content: center;
 }
 
-/* Navbar */
+/* Navbar styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -50,6 +50,7 @@ html, body {
     align-items: center;
 }
 
+/* Navbar list styles */
 .navbar ul {
     font-size: 25px;
     padding: 0;
@@ -60,14 +61,17 @@ html, body {
     flex-wrap: wrap;
 }
 
+/* Navbar list item styles */
 .navbar ul li {
     margin: 0 20px; /* Increased spacing between menu items */
 }
 
+/* Navbar link styles */
 .navbar ul li a {
     color: var(--text-color);
 }
 
+/* Scrolled navbar styles */
 .navbarScrolled {
     position: fixed;
     top: 0;
@@ -81,6 +85,7 @@ html, body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Scrolled navbar list styles */
 .navbarScrolled ul {
     display: flex;
     flex-direction: row;
@@ -90,11 +95,12 @@ html, body {
     padding: 0;
 }
 
+/* Scrolled navbar list item styles */
 .navbarScrolled ul li {
     margin: 0 30px; /* More spacing when scrolled */
 }
 
-/* Ensuring each section takes up the full screen */
+/* Full screen sections */
 #hero, #projects, #skills, #contact {
     min-height: 100vh;
     display: flex;
@@ -104,7 +110,7 @@ html, body {
     margin-bottom: 100px; /* Increased space between sections */
 }
 
-/* Footer */
+/* Footer styles */
 .footer {
     display: flex;
     justify-content: center;
@@ -115,12 +121,13 @@ html, body {
     background-color: var(--footer-background-color);
 }
 
+/* Footer paragraph styles */
 .footer p {
     font-size: 16px;
     color: var(--footer-text-color);
 }
 
-/* Contact Form */
+/* Contact form styles */
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -129,6 +136,7 @@ html, body {
     align-items: center;
 }
 
+/* Contact form group styles */
 .contactForm .formGroup {
     display: flex;
     flex-direction: column;
@@ -136,6 +144,7 @@ html, body {
     align-items: center;
 }
 
+/* Contact form input and textarea styles */
 .contactForm input,
 .contactForm textarea {
     padding: 15px;
@@ -149,21 +158,25 @@ html, body {
     max-width: 600px;
 }
 
+/* Contact form textarea specific styles */
 .contactForm textarea {
     height: 100px; 
     resize: none; 
 }
 
+/* Focus state styles for input and textarea */
 .contactForm input:focus,
 .contactForm textarea:focus {
     border-color: var(--btn-color);
     outline: none;
 }
 
+/* Placeholder text styles */
 .contactForm ::placeholder {
     color: var(--placeholder-color);
 }
 
+/* Contact form button styles */
 .contactForm .btn {
     align-self: center;
     background-color: var(--btn-color);
@@ -176,16 +189,18 @@ html, body {
     transition: background-color 0.3s, transform 0.2s;
 }
 
+/* Hover state for button */
 .contactForm .btn:hover {
     background-color: var(--btn-hover-color);
     transform: translateY(-3px);
 }
 
+/* Active state for button */
 .contactForm .btn:active {
     transform: translateY(1px);
 }
 
-/* Projects */
+/* Projects container styles */
 .projectsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
@@ -196,6 +211,7 @@ html, body {
     justify-content: center;
 }
 
+/* Project card styles */
 .projectCard {
     background-color: var(--project-card-bg);
     padding: 15px;
@@ -208,24 +224,27 @@ html, body {
     justify-content: center;
 }
 
+/* Image styles within project cards */
 .projectCard img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
+/* Heading styles within project cards */
 .projectCard h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
+/* Paragraph styles within project cards */
 .projectCard p {
     font-size: 1rem;
     color: var(--text-color);
     margin-bottom: 0;
 }
 
-/* Skills */
+/* Skill list styles */
 .skillList {
     display: flex;
     flex-wrap: wrap;
@@ -236,6 +255,7 @@ html, body {
     border-bottom: 1px solid var(--btn-color);
 }
 
+/* Skill item styles */
 .skillItem {
     background-color: var(--project-card-bg);
     border-radius: 10px;
@@ -248,6 +268,7 @@ html, body {
     justify-content: center;
 }
 
+/* Image styles within skill items */
 .skillItem img {
     width: 60px;
     height: 60px;
@@ -255,16 +276,18 @@ html, body {
     transition: transform 0.3s ease;
 }
 
+/* Hover state for images within skill items */
 .skillItem img:hover {
     transform: scale(1.1);
 }
 
+/* Paragraph styles within skill items */
 .skillItem p {
     font-size: 1rem;
     color: var(--text-color);
 }
 
-/* Media Queries for Responsive Design */
+/* Media queries for responsive design */
 @media (max-width: 1200px) {
     .flexItem {
         flex: 1 1 calc(33.333% - 20px);

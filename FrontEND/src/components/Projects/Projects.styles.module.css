@@ -1,3 +1,4 @@
+/* Container for centering content */
 .container {
     display: flex;
     flex-direction: column;
@@ -7,20 +8,22 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
+/* Image styles within the container */
 .container img {
     max-width: 100%;
     border-radius: 10px;
     margin-bottom: 20px; 
 }
 
+/* Heading styles within the container */
 .container h1 {
     font-size: 2.5rem;
     margin: 20px 0;
 }
 
+/* Link styles within the container */
 .container a {
     display: inline-block;
     text-decoration: none;
@@ -29,10 +32,12 @@
     transition: color 0.3s ease;
 }
 
+/* Hover state for links within the container */
 .container a:hover {
     color: var(--btn-text-color);
 }
 
+/* Projects container styles */
 .projectsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
@@ -40,9 +45,9 @@
     max-width: 100%; 
     width: 100%;
     margin: 0 auto;
-
 }
 
+/* Project card styles */
 .projectCard {
     background-color: var(--project-card-bg);
     padding: 15px;
@@ -52,18 +57,20 @@
     max-width: 100%;
 }
 
+/* Image styles within project cards */
 .projectCard img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-
 }
 
+/* Heading styles within project cards */
 .projectCard h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
+/* Paragraph styles within project cards */
 .projectCard p {
     font-size: 1rem;
     color: var(--text-color);

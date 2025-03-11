@@ -11,4 +11,4 @@ function Footer() {
   );
 }
 
-export default Footer; // Make sure this line is included
+export default Footer; 

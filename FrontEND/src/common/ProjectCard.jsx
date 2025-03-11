@@ -1,5 +1,7 @@
+//Import PropTypes to validate the props
 import PropTypes from 'prop-types';
 
+//function to create project card
 function ProjectCard({ 
   h3 = "Untitled Project", 
   src = "/default-image.png", 

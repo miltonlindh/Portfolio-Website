@@ -1,3 +1,4 @@
+/* Container for centering content */
 .container {
     display: flex;
     justify-content: center;
@@ -10,11 +11,13 @@
     background-color: var(--footer-background-color);
 }
 
+/* Paragraph styles within the container */
 .container p {
     font-size: 16px;
     color: var(--footer-text-color);
-   
 }
+
+/* Footer styles */
 footer {
     padding: 0 !important;
-  }
+}

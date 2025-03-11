@@ -8,12 +8,11 @@ import reduxLogo from '../../assets/Icons/redux.logo.png';
 import sassLogo from '../../assets/Icons/sass.logo.png';
 import SkillList from '../../common/SkillList';
 
- // listor med vad jag kan för kodspråk, biblotek, ramverk
+// Lists of the coding languages, libraries, and frameworks I know
 function Skills() {
     return (
-        /*lätt att lägga till nya färdigheter genom 
-        att kopiera befintlig rad och lägga under samt ändra 
-         namn och lägga in ny bild*/
+          /* Easy to add new skills by copying an existing line,
+             changing the name, and adding a new image */
         <section id="skills" className={styles.container}>
             <h1 className='sectionTitle'>Skills</h1>
             <div className={styles.skillList}>

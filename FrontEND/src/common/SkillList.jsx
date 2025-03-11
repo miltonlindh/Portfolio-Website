@@ -2,20 +2,20 @@
 
 import PropTypes from 'prop-types';
 
-//definera komponenten SkillList med destruturering av props
+//Define the skilllist component using destructuring of props
 function SkillList({src, skill })  {
   return (
-    //använd span för att gruppen ikon och text
+    //Use span to group icon and text
     <span>
     <img src={src} alt="icons"/>
     <p>{skill}</p>
   </span>
   )
 }
-//fungerar lika som i ProjectCard.jsx bara för SkillList istället
+//Works the sam way as in ProjectCard.jsx but for skilllist instead
 SkillList.propTypes = {
-  src: PropTypes.string.isRequired,
-  skill: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired, //Ensure 'src' is a string and is and is required
+  skill: PropTypes.string.isRequired, // Ensure 'skill' is a string and is required
 };
 
 export default SkillList;

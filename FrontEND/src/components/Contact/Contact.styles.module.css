@@ -1,54 +1,57 @@
-/* Container */
+/* Container for centering content */
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 60px 20px; 
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    position: relative; 
 }
 
-/* Section Title */
+/* Default h1 styles */
 .container h1 {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 2.5rem; 
+    text-align: center; 
 }
 
+/* Section title styles */
 .sectionTitle {
-    font-size: 2rem;
-    color: var(--text-color);
-    position: relative;
-    text-align: center;
+    font-size: 2rem; 
+    color: var(--text-color); 
+    position: relative; 
+    text-align: center; 
 }
 
+/* Underline effect for section titles */
 .sectionTitle::after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    margin: -2px;
-    background-color: var(--btn-color);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    content: ''; 
+    width: 100%; 
+    height: 3px; 
+    margin: -2px; 
+    background-color: var(--btn-color); 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
-/* Form */
+/* Form container */
 form {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 100%; 
 }
 
+/* Form group container */
 .formGroup {
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: column; 
+    position: relative; 
 }
 
-/* Visually Hidden Labels for Accessibility */
+/* Hidden labels for accessibility */
 .visuallyHidden {
     position: absolute;
     width: 1px;
@@ -56,129 +59,133 @@ form {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
+    clip: rect(0 0 0 0); 
+    white-space: nowrap; 
+    border: 0; 
 }
 
-/* Input & Textarea */
+/* Input and textarea styles */
 input,
 textarea {
-    padding: 15px;
-    border: 1px solid var(--form-border-color);
-    border-radius: 5px;
-    background-color: var(--input-background-color);
-    color: var(--input-text-color);
-    font-size: 1rem;
-    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+    padding: 15px; 
+    border: 1px solid var(--form-border-color); 
+    border-radius: 5px; 
+    background-color: var(--input-background-color); 
+    color: var(--input-text-color); 
+    font-size: 1rem; 
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s; 
 }
 
+/* Specific styles for textarea */
 textarea {
     height: 150px; 
     resize: none; 
 }
 
+/* Focus state styles */
 input:focus,
 textarea:focus {
-    border-color: var(--btn-color);
-    outline: none;
+    border-color: var(--btn-color); 
+    outline: none; 
 }
 
-/* Placeholder */
+/* Placeholder text styles */
 ::placeholder {
-    color: var(--placeholder-color);
+    color: var(--placeholder-color); 
 }
 
-/* Submit Button */
+/* Submit button styles */
 .btn {
-    align-self: center;
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 30px;
-    padding: 12px 24px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    align-self: center; 
+    background-color: var(--btn-color); 
+    color: var(--btn-text-color); 
+    border: none; 
+    border-radius: 30px; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
 }
 
+/* Hover state styles for submit button */
 .btn:hover {
-    background-color: var(--btn-color);
-    transform: translateY(-3px);
+    background-color: var(--btn-color); 
+    transform: translateY(-3px); 
 }
 
+/* Active state styles for submit button */
 .btn:active {
-    transform: translateY(1px);
+    transform: translateY(1px); 
 }
 
-/* Alert Box */
+/* Alert box styles */
 .alertBox {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: var(--btn-color);
-    color: var(--btn-text-color);
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    min-width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.3s ease-in-out;
-    z-index: 1000;
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    background: var(--btn-color); 
+    color: var(--btn-text-color); 
+    padding: 15px 20px; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    min-width: 250px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    animation: fadeIn 0.3s ease-in-out; 
+    z-index: 1000; 
 }
 
-/* Success Alert */
+/* Success alert styles */
 .success {
-    background: var(--btn-color);
-    color: var(--btn-text-color);
+    background: var(--btn-color); 
+    color: var(--btn-text-color); 
 }
 
-
-/* Error Alert */
+/* Error alert styles */
 .error {
-    background: var(--btn);
-    color: var(--btn-text-color);
+    background: var(--btn); 
+    color: var(--btn-text-color); 
 }
 
+/* Dark theme error alert styles */
 .dark-theme .error {
-    background: var(--error);
-    color: var(--btn-text-colortext);
+    background: var(--error); 
+    color: var(--btn-text-colortext); 
 }
 
-/* Alert Close Button (Simple 'X' Button) */
+/* Close button styles */
 .alertClose {
-    background: none;
-    border: none;
-    color: var(--btn-text-color);
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 10px;
-    transition: opacity 0.2s ease-in-out;
+    background: none; 
+    border: none; 
+    color: var(--btn-text-color); 
+    font-size: 18px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    margin-left: 10px; 
+    transition: opacity 0.2s ease-in-out; 
 }
 
-
-/* Hover & Active Effects */
+/* Hover effect for close button */
 .alertClose:hover {
-    opacity: 0.7;
+    opacity: 0.7; 
 }
 
+/* Active effect for close button */
 .alertClose:active {
-    opacity: 0.5;
+    opacity: 0.5; 
 }
 
-/* Fade-in Animation */
+/* Fade-in animation */
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(-10px);
+        opacity: 0; 
+        transform: translateY(-10px); 
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; 
+        transform: translateY(0); 
     }
 }

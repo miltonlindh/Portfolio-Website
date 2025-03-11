@@ -1,3 +1,4 @@
+/* Define CSS variables for light theme */
 :root {
   --background-color: #ffffff;
   --btn-color: #13243e;
@@ -7,9 +8,9 @@
   --text-color: #222222;
   --form-text-color: #555555;
   --footer-text-color: #888888;
-  
 }
 
+/* Define CSS variables for dark theme */
 [data-theme='dark'] {
   --background-color: #202020;
   --btn-color: #bb86fc;
@@ -21,8 +22,7 @@
   --footer-text-color: #aaaaaa;
 }
 
-  
-
+/* Body styles */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -31,9 +31,9 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-
 }
 
+/* Heading styles */
 h1, h2, h3 {
   margin: 0;
   font-family: 'Rubik', sans-serif;
@@ -41,12 +41,14 @@ h1, h2, h3 {
   color: var(--text-color);
 }
 
+/* Paragraph styles */
 p {
   font-size: 1rem;
   font-weight: 300;
   margin: 0 0 1rem 0;
 }
 
+/* Button styles */
 button {
   background-color: var(--btn-color);
   color: var(--btn-text-color);
@@ -58,13 +60,13 @@ button {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover state for button */
 button:hover {
   background-color: var(--btn-hover-color);
   transform: translateY(-3px);
 }
 
+/* Active state for button */
 button:active {
   transform: translateY(1px);
 }
-
-

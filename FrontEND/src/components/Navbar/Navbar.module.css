@@ -1,6 +1,6 @@
-/* Default Navbar */
+/* Navbar default styles */
 .navbar {
-  position: absolute;
+  position: absolute; /* Absolute positioning */
   left: 0;
   top: 0;
   width: 200px;
@@ -9,33 +9,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: all 0.7s ease;
-
+  transition: all 0.7s ease; /* Smooth transition */
 }
 
+/* Navbar list styles */
 .navbar ul {
   font-size: 25px;
-  list-style-type: none;
+  list-style-type: none; /* Remove bullet points */
   padding: 0;
-
 }
 
+/* Navbar list item styles */
 .navbar ul li {
   margin: 50px 0;
-  border-bottom: 1px solid var(--btn-color);
-  font-weight: 200 !important; /* Force it */
-
+  border-bottom: 1px solid var(--btn-color); /* Border bottom */
+  font-weight: 200 !important; /* Force font weight */
 }
 
+/* Navbar link styles */
 .navbar ul li a {
   color: var(--text-color);
-  text-decoration: none;
-  
+  text-decoration: none; /* Remove underline */
 }
 
-/* Navbar when Scrolled */
+/* Navbar styles when scrolled */
 .navbarScrolled {
-  position: fixed;
+  position: fixed; /* Fixed positioning */
   top: 0;
   left: 0;
   width: 800px;
@@ -43,42 +42,44 @@
   display: flex;
   justify-content: space-around;
   background-color: transparent;
-  border-bottom: 1px solid var(--btn-color);
-  transition: all 0.7s ease; /* ✅ Keeps the smooth transition */
+  border-bottom: 1px solid var(--btn-color); /* Border bottom */
+  transition: all 0.7s ease; /* Smooth transition */
 }
 
+/* Navbar list styles when scrolled */
 .navbarScrolled ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Horizontal list items */
   padding: 0;
 }
 
+/* Navbar list item styles when scrolled */
 .navbarScrolled ul li {
   margin: 0 40px;
-  border-bottom: none;
+  border-bottom: none; /* Remove border bottom */
 }
 
-/* Fix for Smaller Screens */
+/* Styles for smaller screens */
 @media (max-width: 768px) {
   .navbar {
-    position: fixed;
+    position: fixed; /* Fixed positioning */
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Horizontal layout */
     justify-content: center;
     align-items: center;
     z-index: 1000;
     padding: 10px 0;
-    border-bottom: 1px solid var(--btn-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--btn-color); /* Border bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
   }
 
   .navbar ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Horizontal list items */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -88,6 +89,6 @@
 
   .navbar ul li {
     margin: 0 5px;
-    border-bottom: none;
+    border-bottom: none; /* Remove border bottom */
   }
 }

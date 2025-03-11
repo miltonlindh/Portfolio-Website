@@ -1,3 +1,4 @@
+/* Container for centering content */
 .container {
     display: flex;
     flex-direction: column;
@@ -9,23 +10,27 @@
     margin: 0 auto;
 }
 
+/* Heading styles within the container */
 .container h1 {
     font-size: 2.5rem;
     margin-bottom: 2%;
     margin-top: 8.5%;
 }
 
+/* Span styles within the container */
 .container span {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+/* Image styles within the container */
 .container img {
     width: 40px;
     margin-right: -12px;
 }
 
+/* Skill list styles */
 .skillList {
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +41,7 @@
     border-bottom: 1px solid var(--btn-color);
 }
 
+/* Skill item styles */
 .skillItem {
     background-color: var(--project-card-bg);
     border-radius: 10px;
@@ -45,6 +51,7 @@
     transition: transform 0.3s ease;
 }
 
+/* Image styles within skill items */
 .skillItem img {
     width: 60px;
     height: 60px;
@@ -52,10 +59,12 @@
     transition: transform 0.3s ease;
 }
 
+/* Hover state for images within skill items */
 .skillItem img:hover {
     transform: scale(1.1);
 }
 
+/* Paragraph styles within skill items */
 .skillItem p {
     font-size: 1rem;
     color: var(--text-color);

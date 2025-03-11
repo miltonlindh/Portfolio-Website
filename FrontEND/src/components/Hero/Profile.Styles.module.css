@@ -1,3 +1,4 @@
+/* Container for centering content */
 .container {
     display: flex;
     flex-direction: column;
@@ -9,12 +10,15 @@
     margin: 0 auto;
 }
 
+/* Styles for resume container */
 .resume {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    z-index: 1000;
 }
 
+/* Styles for buttons */
 .button {
     background-color: var(--btn-color);
     color: var(--btn-text-color);
@@ -26,15 +30,15 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
     position: relative; 
 }
-.resume{
-    z-index: 1000;
-}
+
+/* Hover state for buttons */
 .button:hover {
     background-color: var(--btn-text-color);
     color: var(--btn-color);
     transform: translateY(-5px);
 }
 
+/* Container for info section */
 .info {
     display: flex;
     flex-direction: column;
@@ -42,61 +46,67 @@
     text-align: center;
 }
 
+/* Styles for main heading in info section */
 .info h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 20px;
 }
 
+/* Styles for subheading in info section */
 .info h2 {
     font-size: 1.5rem;
     margin-top: 10px;
 }
+
+/* Container for social icons */
 .socials {
     display: flex;
     gap: 5px;
-    align-items: center; /* Ensures vertical alignment */
+    align-items: center;
     justify-content: center;
     z-index: 1000;
-  }
-  
-  .socials a {
+}
+
+/* Link styles for social icons */
+.socials a {
     display: flex;
-    align-items: center; /* Ensures icons are vertically centered */
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 10;
-  }
-  
-  .socials img {
-    width: 40px; /* Ensures all icons are the same size */
+}
+
+/* Image styles for social icons */
+.socials img {
+    width: 40px; 
     height: 40px;
     transition: transform 0.2s ease;
     pointer-events: auto;
-  }
-  
-  .socials img:hover {
+}
+
+/* Hover state for social icons */
+.socials img:hover {
     transform: scale(1.1);
-  }
-  
+}
+
+/* Container for color mode switch */
 .colorModeContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-   
-    
 }
 
+/* Styles for color mode icon */
 .colorMode { 
     z-index: 1000; 
     cursor: pointer;
     border-radius: 50%;
     transition: transform 0.2s ease;
-
 }
 
+/* Hover state for color mode icon */
 .colorMode:hover {
     transform: scale(1.1);
 }
-

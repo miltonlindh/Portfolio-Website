@@ -10,17 +10,19 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 
 function App() {
+  // Get the current theme from the Redux state
   const theme = useSelector((state) => state.theme);
 
   useEffect(() => {
-    console.log("💡 Applying theme:", theme); // Debugging
+    console.log("💡 Applying theme:", theme); 
+  // Apply the theme to the document body
     document.body.setAttribute('data-theme', theme);
   }, [theme]);
 
   return (
-    <div className="wrapper"> {/* New wrapper for full-page layout */}
+    <div className="wrapper"> 
       <Navbar />
-      <div className="content"> {/* Pushes footer down */}
+      <div className="content"> 
         <Hero />
         <Projects />
         <Skills />

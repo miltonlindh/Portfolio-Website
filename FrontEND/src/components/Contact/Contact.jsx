@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import styles from './Contact.styles.module.css'; // Ensure you are using this CSS file
 
+// Define the Contact component
 function Contact() {
+    // Initialize state for form data and alert messages
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,19 +15,19 @@ function Contact() {
   const [alertType, setAlertType] = useState(''); // 'success' or 'error'
   const [showAlert, setShowAlert] = useState(false);
 
-
+ // Handle input changes and update state
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      
+      // Send form data to the server
       const response = await fetch('http://localhost:3001/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -35,18 +37,20 @@ function Contact() {
 
       const result = await response.text();
       if (result === 'success') {
-        setAlertMessage(' Message sent successfully!');
+        // If message was sent successfully, update alert and reset form
+        setAlertMessage('Message sent successfully!');
         setAlertType('success');
         setShowAlert(true);
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        setAlertMessage(' Error sending message. Please try again.');
+        // If there was an error sending the message
+        setAlertMessage('Error sending message. Please try again.');
         setAlertType('error');
         setShowAlert(true);
       }
     } catch (error) {
       console.error("Error:", error);
-      setAlertMessage('❌ An error occurred. Please try again.');
+      setAlertMessage('An error occurred. Please try again.');
       setAlertType('error');
       setShowAlert(true);
     }
