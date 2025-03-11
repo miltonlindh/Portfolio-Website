@@ -1,22 +1,20 @@
-För att starta Hemsidan 
+# Portfolio Website
 
+Clone the repository:
+```bash
 git clone https://github.com/miltonlindh/Portfolio-Website.git
-
 cd Portfolio-Website
-
-starta backend:
-
+```
+backend
+```
 cd backend
-
 npm install
-
 node server.js
+```
 
-
-starta frontend:
-
+frontend
+```
 cd frontend
-
 npm install
-
 npm run dev
+
